@@ -1,0 +1,961 @@
+{
+  "model_type": "Random Forest Regressor",
+  "trained_at": "2026-10-08 15:55:38 UTC",
+  "training_samples": 3660,
+  "test_samples": 360,
+  "split_date": "2026-09-08",
+  "random_forest": {
+    "mae": 4.488,
+    "rmse": 6.607,
+    "r2_score": 0.705
+  },
+  "baseline_linear_regression": {
+    "mae": 4.627,
+    "rmse": 6.827,
+    "r2_score": 0.685
+  },
+  "feature_importances": [
+    {
+      "feature": "rolling_mean_7",
+      "importance": 0.4165
+    },
+    {
+      "feature": "rolling_mean_14",
+      "importance": 0.3003
+    },
+    {
+      "feature": "rolling_mean_30",
+      "importance": 0.0729
+    },
+    {
+      "feature": "dayofweek",
+      "importance": 0.0332
+    },
+    {
+      "feature": "day",
+      "importance": 0.0148
+    },
+    {
+      "feature": "lag_14",
+      "importance": 0.0143
+    },
+    {
+      "feature": "demand_momentum",
+      "importance": 0.014
+    },
+    {
+      "feature": "lag_7",
+      "importance": 0.0133
+    },
+    {
+      "feature": "sin_dayofyear",
+      "importance": 0.0131
+    },
+    {
+      "feature": "cos_dayofyear",
+      "importance": 0.0125
+    },
+    {
+      "feature": "rolling_std_7",
+      "importance": 0.0125
+    },
+    {
+      "feature": "lag_3",
+      "importance": 0.0122
+    },
+    {
+      "feature": "lag_2",
+      "importance": 0.012
+    },
+    {
+      "feature": "lag_30",
+      "importance": 0.0116
+    },
+    {
+      "feature": "lag_1",
+      "importance": 0.0114
+    },
+    {
+      "feature": "is_weekend",
+      "importance": 0.0073
+    },
+    {
+      "feature": "rolling_max_7",
+      "importance": 0.0069
+    },
+    {
+      "feature": "rolling_min_7",
+      "importance": 0.0061
+    },
+    {
+      "feature": "medicine_id",
+      "importance": 0.0055
+    },
+    {
+      "feature": "sin_month",
+      "importance": 0.0027
+    },
+    {
+      "feature": "month",
+      "importance": 0.0023
+    },
+    {
+      "feature": "cos_month",
+      "importance": 0.0021
+    },
+    {
+      "feature": "is_month_end",
+      "importance": 0.001
+    },
+    {
+      "feature": "is_month_start",
+      "importance": 0.0007
+    },
+    {
+      "feature": "quarter",
+      "importance": 0.0006
+    }
+  ],
+  "sample_evaluations": [
+    {
+      "sale_date": "2026-09-09",
+      "medicine_id": 9,
+      "quantity_sold": 10,
+      "predicted_sold": 6.6,
+      "baseline_predicted": 6.1
+    },
+    {
+      "sale_date": "2026-09-10",
+      "medicine_id": 9,
+      "quantity_sold": 7,
+      "predicted_sold": 6.9,
+      "baseline_predicted": 6.3
+    },
+    {
+      "sale_date": "2026-09-11",
+      "medicine_id": 9,
+      "quantity_sold": 8,
+      "predicted_sold": 8.0,
+      "baseline_predicted": 7.6
+    },
+    {
+      "sale_date": "2026-09-12",
+      "medicine_id": 9,
+      "quantity_sold": 6,
+      "predicted_sold": 7.8,
+      "baseline_predicted": 8.2
+    },
+    {
+      "sale_date": "2026-09-13",
+      "medicine_id": 9,
+      "quantity_sold": 5,
+      "predicted_sold": 4.7,
+      "baseline_predicted": 5.7
+    },
+    {
+      "sale_date": "2026-09-14",
+      "medicine_id": 9,
+      "quantity_sold": 9,
+      "predicted_sold": 8.1,
+      "baseline_predicted": 7.2
+    },
+    {
+      "sale_date": "2026-09-15",
+      "medicine_id": 9,
+      "quantity_sold": 4,
+      "predicted_sold": 8.2,
+      "baseline_predicted": 7.8
+    },
+    {
+      "sale_date": "2026-09-16",
+      "medicine_id": 9,
+      "quantity_sold": 10,
+      "predicted_sold": 7.7,
+      "baseline_predicted": 7.1
+    },
+    {
+      "sale_date": "2026-09-17",
+      "medicine_id": 9,
+      "quantity_sold": 7,
+      "predicted_sold": 7.6,
+      "baseline_predicted": 6.6
+    },
+    {
+      "sale_date": "2026-09-18",
+      "medicine_id": 9,
+      "quantity_sold": 7,
+      "predicted_sold": 8.4,
+      "baseline_predicted": 6.8
+    },
+    {
+      "sale_date": "2026-09-19",
+      "medicine_id": 9,
+      "quantity_sold": 7,
+      "predicted_sold": 8.2,
+      "baseline_predicted": 7.7
+    },
+    {
+      "sale_date": "2026-09-20",
+      "medicine_id": 9,
+      "quantity_sold": 5,
+      "predicted_sold": 4.8,
+      "baseline_predicted": 5.8
+    },
+    {
+      "sale_date": "2026-09-21",
+      "medicine_id": 9,
+      "quantity_sold": 6,
+      "predicted_sold": 7.5,
+      "baseline_predicted": 7.5
+    },
+    {
+      "sale_date": "2026-09-22",
+      "medicine_id": 9,
+      "quantity_sold": 6,
+      "predicted_sold": 7.6,
+      "baseline_predicted": 6.6
+    },
+    {
+      "sale_date": "2026-09-23",
+      "medicine_id": 9,
+      "quantity_sold": 9,
+      "predicted_sold": 7.9,
+      "baseline_predicted": 7.6
+    },
+    {
+      "sale_date": "2026-09-24",
+      "medicine_id": 9,
+      "quantity_sold": 5,
+      "predicted_sold": 7.7,
+      "baseline_predicted": 6.6
+    },
+    {
+      "sale_date": "2026-09-25",
+      "medicine_id": 9,
+      "quantity_sold": 2,
+      "predicted_sold": 7.9,
+      "baseline_predicted": 6.5
+    },
+    {
+      "sale_date": "2026-09-26",
+      "medicine_id": 9,
+      "quantity_sold": 7,
+      "predicted_sold": 7.6,
+      "baseline_predicted": 7.0
+    },
+    {
+      "sale_date": "2026-09-27",
+      "medicine_id": 9,
+      "quantity_sold": 6,
+      "predicted_sold": 4.8,
+      "baseline_predicted": 6.9
+    },
+    {
+      "sale_date": "2026-09-28",
+      "medicine_id": 9,
+      "quantity_sold": 6,
+      "predicted_sold": 8.6,
+      "baseline_predicted": 8.2
+    },
+    {
+      "sale_date": "2026-09-29",
+      "medicine_id": 9,
+      "quantity_sold": 5,
+      "predicted_sold": 8.3,
+      "baseline_predicted": 7.5
+    },
+    {
+      "sale_date": "2026-09-30",
+      "medicine_id": 9,
+      "quantity_sold": 12,
+      "predicted_sold": 8.5,
+      "baseline_predicted": 8.2
+    },
+    {
+      "sale_date": "2026-10-01",
+      "medicine_id": 9,
+      "quantity_sold": 5,
+      "predicted_sold": 8.2,
+      "baseline_predicted": 7.3
+    },
+    {
+      "sale_date": "2026-10-02",
+      "medicine_id": 9,
+      "quantity_sold": 5,
+      "predicted_sold": 8.7,
+      "baseline_predicted": 6.5
+    },
+    {
+      "sale_date": "2026-10-03",
+      "medicine_id": 9,
+      "quantity_sold": 7,
+      "predicted_sold": 9.1,
+      "baseline_predicted": 8.4
+    },
+    {
+      "sale_date": "2026-10-04",
+      "medicine_id": 9,
+      "quantity_sold": 10,
+      "predicted_sold": 6.6,
+      "baseline_predicted": 7.4
+    },
+    {
+      "sale_date": "2026-10-05",
+      "medicine_id": 9,
+      "quantity_sold": 10,
+      "predicted_sold": 8.2,
+      "baseline_predicted": 8.5
+    },
+    {
+      "sale_date": "2026-10-06",
+      "medicine_id": 9,
+      "quantity_sold": 6,
+      "predicted_sold": 8.0,
+      "baseline_predicted": 6.6
+    },
+    {
+      "sale_date": "2026-10-07",
+      "medicine_id": 9,
+      "quantity_sold": 5,
+      "predicted_sold": 8.0,
+      "baseline_predicted": 7.9
+    },
+    {
+      "sale_date": "2026-10-08",
+      "medicine_id": 9,
+      "quantity_sold": 2,
+      "predicted_sold": 8.2,
+      "baseline_predicted": 6.1
+    },
+    {
+      "sale_date": "2026-09-09",
+      "medicine_id": 10,
+      "quantity_sold": 28,
+      "predicted_sold": 26.7,
+      "baseline_predicted": 24.8
+    },
+    {
+      "sale_date": "2026-09-10",
+      "medicine_id": 10,
+      "quantity_sold": 28,
+      "predicted_sold": 27.1,
+      "baseline_predicted": 23.5
+    },
+    {
+      "sale_date": "2026-09-11",
+      "medicine_id": 10,
+      "quantity_sold": 42,
+      "predicted_sold": 26.2,
+      "baseline_predicted": 25.5
+    },
+    {
+      "sale_date": "2026-09-12",
+      "medicine_id": 10,
+      "quantity_sold": 25,
+      "predicted_sold": 32.0,
+      "baseline_predicted": 28.9
+    },
+    {
+      "sale_date": "2026-09-13",
+      "medicine_id": 10,
+      "quantity_sold": 13,
+      "predicted_sold": 21.8,
+      "baseline_predicted": 24.1
+    },
+    {
+      "sale_date": "2026-09-14",
+      "medicine_id": 10,
+      "quantity_sold": 23,
+      "predicted_sold": 27.0,
+      "baseline_predicted": 26.0
+    },
+    {
+      "sale_date": "2026-09-15",
+      "medicine_id": 10,
+      "quantity_sold": 21,
+      "predicted_sold": 26.3,
+      "baseline_predicted": 24.9
+    },
+    {
+      "sale_date": "2026-09-16",
+      "medicine_id": 10,
+      "quantity_sold": 18,
+      "predicted_sold": 26.0,
+      "baseline_predicted": 23.8
+    },
+    {
+      "sale_date": "2026-09-17",
+      "medicine_id": 10,
+      "quantity_sold": 20,
+      "predicted_sold": 25.7,
+      "baseline_predicted": 22.7
+    },
+    {
+      "sale_date": "2026-09-18",
+      "medicine_id": 10,
+      "quantity_sold": 26,
+      "predicted_sold": 25.5,
+      "baseline_predicted": 24.4
+    },
+    {
+      "sale_date": "2026-09-19",
+      "medicine_id": 10,
+      "quantity_sold": 30,
+      "predicted_sold": 28.6,
+      "baseline_predicted": 24.1
+    },
+    {
+      "sale_date": "2026-09-20",
+      "medicine_id": 10,
+      "quantity_sold": 22,
+      "predicted_sold": 21.5,
+      "baseline_predicted": 20.6
+    },
+    {
+      "sale_date": "2026-09-21",
+      "medicine_id": 10,
+      "quantity_sold": 20,
+      "predicted_sold": 24.9,
+      "baseline_predicted": 24.1
+    },
+    {
+      "sale_date": "2026-09-22",
+      "medicine_id": 10,
+      "quantity_sold": 26,
+      "predicted_sold": 25.7,
+      "baseline_predicted": 23.5
+    },
+    {
+      "sale_date": "2026-09-23",
+      "medicine_id": 10,
+      "quantity_sold": 17,
+      "predicted_sold": 25.4,
+      "baseline_predicted": 22.8
+    },
+    {
+      "sale_date": "2026-09-24",
+      "medicine_id": 10,
+      "quantity_sold": 19,
+      "predicted_sold": 26.2,
+      "baseline_predicted": 22.6
+    },
+    {
+      "sale_date": "2026-09-25",
+      "medicine_id": 10,
+      "quantity_sold": 28,
+      "predicted_sold": 26.0,
+      "baseline_predicted": 25.0
+    },
+    {
+      "sale_date": "2026-09-26",
+      "medicine_id": 10,
+      "quantity_sold": 31,
+      "predicted_sold": 26.0,
+      "baseline_predicted": 24.3
+    },
+    {
+      "sale_date": "2026-09-27",
+      "medicine_id": 10,
+      "quantity_sold": 15,
+      "predicted_sold": 18.9,
+      "baseline_predicted": 22.6
+    },
+    {
+      "sale_date": "2026-09-28",
+      "medicine_id": 10,
+      "quantity_sold": 31,
+      "predicted_sold": 25.7,
+      "baseline_predicted": 24.3
+    },
+    {
+      "sale_date": "2026-09-29",
+      "medicine_id": 10,
+      "quantity_sold": 29,
+      "predicted_sold": 26.3,
+      "baseline_predicted": 25.6
+    },
+    {
+      "sale_date": "2026-09-30",
+      "medicine_id": 10,
+      "quantity_sold": 18,
+      "predicted_sold": 25.6,
+      "baseline_predicted": 23.5
+    },
+    {
+      "sale_date": "2026-10-01",
+      "medicine_id": 10,
+      "quantity_sold": 24,
+      "predicted_sold": 25.8,
+      "baseline_predicted": 24.9
+    },
+    {
+      "sale_date": "2026-10-02",
+      "medicine_id": 10,
+      "quantity_sold": 17,
+      "predicted_sold": 25.3,
+      "baseline_predicted": 26.6
+    },
+    {
+      "sale_date": "2026-10-03",
+      "medicine_id": 10,
+      "quantity_sold": 34,
+      "predicted_sold": 27.1,
+      "baseline_predicted": 27.1
+    },
+    {
+      "sale_date": "2026-10-04",
+      "medicine_id": 10,
+      "quantity_sold": 19,
+      "predicted_sold": 22.9,
+      "baseline_predicted": 23.9
+    },
+    {
+      "sale_date": "2026-10-05",
+      "medicine_id": 10,
+      "quantity_sold": 25,
+      "predicted_sold": 24.9,
+      "baseline_predicted": 26.6
+    },
+    {
+      "sale_date": "2026-10-06",
+      "medicine_id": 10,
+      "quantity_sold": 17,
+      "predicted_sold": 25.5,
+      "baseline_predicted": 25.0
+    },
+    {
+      "sale_date": "2026-10-07",
+      "medicine_id": 10,
+      "quantity_sold": 34,
+      "predicted_sold": 25.5,
+      "baseline_predicted": 20.4
+    },
+    {
+      "sale_date": "2026-10-08",
+      "medicine_id": 10,
+      "quantity_sold": 34,
+      "predicted_sold": 25.4,
+      "baseline_predicted": 23.1
+    },
+    {
+      "sale_date": "2026-09-09",
+      "medicine_id": 11,
+      "quantity_sold": 22,
+      "predicted_sold": 17.8,
+      "baseline_predicted": 17.7
+    },
+    {
+      "sale_date": "2026-09-10",
+      "medicine_id": 11,
+      "quantity_sold": 13,
+      "predicted_sold": 18.9,
+      "baseline_predicted": 17.7
+    },
+    {
+      "sale_date": "2026-09-11",
+      "medicine_id": 11,
+      "quantity_sold": 15,
+      "predicted_sold": 17.7,
+      "baseline_predicted": 15.3
+    },
+    {
+      "sale_date": "2026-09-12",
+      "medicine_id": 11,
+      "quantity_sold": 23,
+      "predicted_sold": 24.3,
+      "baseline_predicted": 20.5
+    },
+    {
+      "sale_date": "2026-09-13",
+      "medicine_id": 11,
+      "quantity_sold": 15,
+      "predicted_sold": 14.5,
+      "baseline_predicted": 14.4
+    },
+    {
+      "sale_date": "2026-09-14",
+      "medicine_id": 11,
+      "quantity_sold": 15,
+      "predicted_sold": 20.2,
+      "baseline_predicted": 16.2
+    },
+    {
+      "sale_date": "2026-09-15",
+      "medicine_id": 11,
+      "quantity_sold": 24,
+      "predicted_sold": 18.6,
+      "baseline_predicted": 17.8
+    },
+    {
+      "sale_date": "2026-09-16",
+      "medicine_id": 11,
+      "quantity_sold": 25,
+      "predicted_sold": 19.3,
+      "baseline_predicted": 18.6
+    },
+    {
+      "sale_date": "2026-09-17",
+      "medicine_id": 11,
+      "quantity_sold": 16,
+      "predicted_sold": 20.2,
+      "baseline_predicted": 17.7
+    },
+    {
+      "sale_date": "2026-09-18",
+      "medicine_id": 11,
+      "quantity_sold": 22,
+      "predicted_sold": 20.2,
+      "baseline_predicted": 17.6
+    },
+    {
+      "sale_date": "2026-09-19",
+      "medicine_id": 11,
+      "quantity_sold": 22,
+      "predicted_sold": 22.6,
+      "baseline_predicted": 22.5
+    },
+    {
+      "sale_date": "2026-09-20",
+      "medicine_id": 11,
+      "quantity_sold": 15,
+      "predicted_sold": 13.6,
+      "baseline_predicted": 17.0
+    },
+    {
+      "sale_date": "2026-09-21",
+      "medicine_id": 11,
+      "quantity_sold": 18,
+      "predicted_sold": 19.8,
+      "baseline_predicted": 17.9
+    },
+    {
+      "sale_date": "2026-09-22",
+      "medicine_id": 11,
+      "quantity_sold": 27,
+      "predicted_sold": 19.4,
+      "baseline_predicted": 19.9
+    },
+    {
+      "sale_date": "2026-09-23",
+      "medicine_id": 11,
+      "quantity_sold": 8,
+      "predicted_sold": 20.3,
+      "baseline_predicted": 20.2
+    },
+    {
+      "sale_date": "2026-09-24",
+      "medicine_id": 11,
+      "quantity_sold": 18,
+      "predicted_sold": 20.3,
+      "baseline_predicted": 16.6
+    },
+    {
+      "sale_date": "2026-09-25",
+      "medicine_id": 11,
+      "quantity_sold": 19,
+      "predicted_sold": 19.5,
+      "baseline_predicted": 17.8
+    },
+    {
+      "sale_date": "2026-09-26",
+      "medicine_id": 11,
+      "quantity_sold": 16,
+      "predicted_sold": 22.9,
+      "baseline_predicted": 18.6
+    },
+    {
+      "sale_date": "2026-09-27",
+      "medicine_id": 11,
+      "quantity_sold": 19,
+      "predicted_sold": 13.6,
+      "baseline_predicted": 17.2
+    },
+    {
+      "sale_date": "2026-09-28",
+      "medicine_id": 11,
+      "quantity_sold": 21,
+      "predicted_sold": 20.3,
+      "baseline_predicted": 18.8
+    },
+    {
+      "sale_date": "2026-09-29",
+      "medicine_id": 11,
+      "quantity_sold": 21,
+      "predicted_sold": 20.0,
+      "baseline_predicted": 20.9
+    },
+    {
+      "sale_date": "2026-09-30",
+      "medicine_id": 11,
+      "quantity_sold": 26,
+      "predicted_sold": 20.4,
+      "baseline_predicted": 18.7
+    },
+    {
+      "sale_date": "2026-10-01",
+      "medicine_id": 11,
+      "quantity_sold": 27,
+      "predicted_sold": 21.1,
+      "baseline_predicted": 19.7
+    },
+    {
+      "sale_date": "2026-10-02",
+      "medicine_id": 11,
+      "quantity_sold": 19,
+      "predicted_sold": 22.0,
+      "baseline_predicted": 21.1
+    },
+    {
+      "sale_date": "2026-10-03",
+      "medicine_id": 11,
+      "quantity_sold": 26,
+      "predicted_sold": 27.3,
+      "baseline_predicted": 21.7
+    },
+    {
+      "sale_date": "2026-10-04",
+      "medicine_id": 11,
+      "quantity_sold": 20,
+      "predicted_sold": 14.5,
+      "baseline_predicted": 21.7
+    },
+    {
+      "sale_date": "2026-10-05",
+      "medicine_id": 11,
+      "quantity_sold": 30,
+      "predicted_sold": 22.2,
+      "baseline_predicted": 22.8
+    },
+    {
+      "sale_date": "2026-10-06",
+      "medicine_id": 11,
+      "quantity_sold": 20,
+      "predicted_sold": 22.3,
+      "baseline_predicted": 22.4
+    },
+    {
+      "sale_date": "2026-10-07",
+      "medicine_id": 11,
+      "quantity_sold": 28,
+      "predicted_sold": 21.5,
+      "baseline_predicted": 20.4
+    },
+    {
+      "sale_date": "2026-10-08",
+      "medicine_id": 11,
+      "quantity_sold": 20,
+      "predicted_sold": 22.9,
+      "baseline_predicted": 22.3
+    },
+    {
+      "sale_date": "2026-09-09",
+      "medicine_id": 12,
+      "quantity_sold": 18,
+      "predicted_sold": 25.7,
+      "baseline_predicted": 24.9
+    },
+    {
+      "sale_date": "2026-09-10",
+      "medicine_id": 12,
+      "quantity_sold": 26,
+      "predicted_sold": 25.4,
+      "baseline_predicted": 24.8
+    },
+    {
+      "sale_date": "2026-09-11",
+      "medicine_id": 12,
+      "quantity_sold": 26,
+      "predicted_sold": 25.8,
+      "baseline_predicted": 22.8
+    },
+    {
+      "sale_date": "2026-09-12",
+      "medicine_id": 12,
+      "quantity_sold": 31,
+      "predicted_sold": 28.2,
+      "baseline_predicted": 25.2
+    },
+    {
+      "sale_date": "2026-09-13",
+      "medicine_id": 12,
+      "quantity_sold": 20,
+      "predicted_sold": 21.0,
+      "baseline_predicted": 23.0
+    },
+    {
+      "sale_date": "2026-09-14",
+      "medicine_id": 12,
+      "quantity_sold": 32,
+      "predicted_sold": 24.9,
+      "baseline_predicted": 23.3
+    },
+    {
+      "sale_date": "2026-09-15",
+      "medicine_id": 12,
+      "quantity_sold": 29,
+      "predicted_sold": 26.3,
+      "baseline_predicted": 25.8
+    },
+    {
+      "sale_date": "2026-09-16",
+      "medicine_id": 12,
+      "quantity_sold": 23,
+      "predicted_sold": 26.0,
+      "baseline_predicted": 24.5
+    },
+    {
+      "sale_date": "2026-09-17",
+      "medicine_id": 12,
+      "quantity_sold": 33,
+      "predicted_sold": 26.5,
+      "baseline_predicted": 26.0
+    },
+    {
+      "sale_date": "2026-09-18",
+      "medicine_id": 12,
+      "quantity_sold": 25,
+      "predicted_sold": 26.7,
+      "baseline_predicted": 25.1
+    },
+    {
+      "sale_date": "2026-09-19",
+      "medicine_id": 12,
+      "quantity_sold": 58,
+      "predicted_sold": 29.1,
+      "baseline_predicted": 27.0
+    },
+    {
+      "sale_date": "2026-09-20",
+      "medicine_id": 12,
+      "quantity_sold": 14,
+      "predicted_sold": 21.2,
+      "baseline_predicted": 25.0
+    },
+    {
+      "sale_date": "2026-09-21",
+      "medicine_id": 12,
+      "quantity_sold": 27,
+      "predicted_sold": 27.3,
+      "baseline_predicted": 26.9
+    },
+    {
+      "sale_date": "2026-09-22",
+      "medicine_id": 12,
+      "quantity_sold": 22,
+      "predicted_sold": 28.3,
+      "baseline_predicted": 27.5
+    },
+    {
+      "sale_date": "2026-09-23",
+      "medicine_id": 12,
+      "quantity_sold": 28,
+      "predicted_sold": 25.6,
+      "baseline_predicted": 22.9
+    },
+    {
+      "sale_date": "2026-09-24",
+      "medicine_id": 12,
+      "quantity_sold": 23,
+      "predicted_sold": 28.2,
+      "baseline_predicted": 26.0
+    },
+    {
+      "sale_date": "2026-09-25",
+      "medicine_id": 12,
+      "quantity_sold": 30,
+      "predicted_sold": 26.5,
+      "baseline_predicted": 23.6
+    },
+    {
+      "sale_date": "2026-09-26",
+      "medicine_id": 12,
+      "quantity_sold": 23,
+      "predicted_sold": 31.8,
+      "baseline_predicted": 30.4
+    },
+    {
+      "sale_date": "2026-09-27",
+      "medicine_id": 12,
+      "quantity_sold": 34,
+      "predicted_sold": 21.2,
+      "baseline_predicted": 23.2
+    },
+    {
+      "sale_date": "2026-09-28",
+      "medicine_id": 12,
+      "quantity_sold": 24,
+      "predicted_sold": 27.0,
+      "baseline_predicted": 28.5
+    },
+    {
+      "sale_date": "2026-09-29",
+      "medicine_id": 12,
+      "quantity_sold": 26,
+      "predicted_sold": 26.3,
+      "baseline_predicted": 26.6
+    },
+    {
+      "sale_date": "2026-09-30",
+      "medicine_id": 12,
+      "quantity_sold": 34,
+      "predicted_sold": 26.6,
+      "baseline_predicted": 27.1
+    },
+    {
+      "sale_date": "2026-10-01",
+      "medicine_id": 12,
+      "quantity_sold": 21,
+      "predicted_sold": 29.7,
+      "baseline_predicted": 28.2
+    },
+    {
+      "sale_date": "2026-10-02",
+      "medicine_id": 12,
+      "quantity_sold": 33,
+      "predicted_sold": 27.1,
+      "baseline_predicted": 27.8
+    },
+    {
+      "sale_date": "2026-10-03",
+      "medicine_id": 12,
+      "quantity_sold": 31,
+      "predicted_sold": 34.3,
+      "baseline_predicted": 32.4
+    },
+    {
+      "sale_date": "2026-10-04",
+      "medicine_id": 12,
+      "quantity_sold": 19,
+      "predicted_sold": 22.1,
+      "baseline_predicted": 28.3
+    },
+    {
+      "sale_date": "2026-10-05",
+      "medicine_id": 12,
+      "quantity_sold": 34,
+      "predicted_sold": 26.6,
+      "baseline_predicted": 28.8
+    },
+    {
+      "sale_date": "2026-10-06",
+      "medicine_id": 12,
+      "quantity_sold": 28,
+      "predicted_sold": 27.0,
+      "baseline_predicted": 27.1
+    },
+    {
+      "sale_date": "2026-10-07",
+      "medicine_id": 12,
+      "quantity_sold": 25,
+      "predicted_sold": 26.1,
+      "baseline_predicted": 28.4
+    },
+    {
+      "sale_date": "2026-10-08",
+      "medicine_id": 12,
+      "quantity_sold": 21,
+      "predicted_sold": 26.0,
+      "baseline_predicted": 25.7
+    }
+  ]
+}
