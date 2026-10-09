@@ -201,12 +201,10 @@ health-supply-ai/
 │   ├── test_ml_pipeline.py     # Feature engineering, training & predictor test
 │   ├── test_agents.py          # 4-agent workflow & human approval test
 │   └── run_all_tests.py        # Master test runner
-├── models/                     # Saved Model Artifacts
-│   ├── random_forest_demand_model.joblib
-│   ├── model_metrics.json
-│   └── feature_names.json
-└── docs/
-    └── VIVA_GUIDE.md           # 35 technical viva questions & answers
+└── models/                     # Saved Model Artifacts
+    ├── random_forest_demand_model.joblib
+    ├── model_metrics.json
+    └── feature_names.json
 ```
 
 ---
@@ -319,23 +317,7 @@ Follow these steps for a complete project demonstration:
 
 ---
 
-## 11. Viva Defense Guide
-
-A comprehensive viva preparation document containing **35 in-depth technical questions and implementation-matched answers** is located at:
-`docs/VIVA_GUIDE.md`
-
-Topics covered:
-- Random Forest theory, decision tree ensembles, and bagging.
-- MAE vs. RMSE mathematical derivations and clinical interpretation.
-- Prevention of time-series data leakage and temporal splitting.
-- Safety stock derivation using normal service factors ($Z = 1.65$).
-- Reorder Point (ROP) calculation.
-- Agentic AI workflow vs. monolithic architectures.
-- Human-in-the-loop compliance safeguards.
-
----
-
-## 12. Academic Credentials
+## 11. Academic Credentials
 
 - **Institute:** Vardhaman College of Engineering (Autonomous), Shamshabad, Hyderabad
 - **Department:** Computer Science and Engineering (Data Science)
