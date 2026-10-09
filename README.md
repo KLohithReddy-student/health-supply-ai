@@ -37,30 +37,30 @@ Conventional retail and hospital pharmacies rely heavily on reactive, manual inv
 ```mermaid
 flowchart TD
     subgraph DataLayer["1. Data & Storage Layer"]
-        DB[(Structured Database\nMySQL / SQLite Fallback)]
-        HistSales[Historical Sales Data\n1-Year Synthetic Benchmark]
-        Catalog[Medicine Catalog &\nBatch Expiry Records]
+        DB[("Structured Database - MySQL / SQLite Fallback")]
+        HistSales["Historical Sales Data (1-Year Synthetic Benchmark)"]
+        Catalog["Medicine Catalog & Batch Expiry Records"]
     end
 
     subgraph MLLayer["2. Machine Learning Engine"]
-        FE[Feature Engineering\nLags, Rolling Means, Seasonality]
-        Split[Temporal Train/Test Split\nNo Future Leakage]
-        RF[Random Forest Regressor\n120 Decision Trees]
-        Metrics[Evaluation Metrics\nMAE: 4.49 | RMSE: 6.61 | R2: 0.71]
+        FE["Feature Engineering (Lags, Rolling Means, Seasonality)"]
+        Split["Temporal Train/Test Split (No Future Leakage)"]
+        RF["Random Forest Regressor (120 Decision Trees)"]
+        Metrics["Evaluation Metrics (MAE: 4.49, RMSE: 6.61, R2: 0.71)"]
     end
 
     subgraph AgentLayer["3. Multi-Agent Orchestration Layer"]
-        A1[1. Inventory Analyst Agent\nScans Stock, Expiry & Trends]
-        A2[2. Demand Forecaster Agent\nRuns ML Pipeline & Metrics]
-        A3[3. Restock Optimizer Agent\nExplainable Formula & Safety Stock]
-        A4[4. Procurement Agent\nCompliance & PO Proposals]
+        A1["1. Inventory Analyst Agent (Scans Stock, Expiry & Trends)"]
+        A2["2. Demand Forecaster Agent (Runs ML Pipeline & Metrics)"]
+        A3["3. Restock Optimizer Agent (Explainable Formula & Safety Stock)"]
+        A4["4. Procurement Agent (Compliance & PO Proposals)"]
     end
 
     subgraph PresentationLayer["4. Presentation & Decision Layer (Streamlit)"]
-        UI[Interactive Web Dashboard]
-        HITL{Human Pharmacist\nApproval Checkpoint}
-        ActionApprove[Approve / Edit Quantity]
-        ActionReject[Reject Proposal]
+        UI["Interactive Web Dashboard"]
+        HITL{"Human Pharmacist Approval Checkpoint"}
+        ActionApprove["Approve / Edit Quantity"]
+        ActionReject["Reject Proposal"]
     end
 
     HistSales --> FE
@@ -68,14 +68,16 @@ flowchart TD
     FE --> Split --> RF --> Metrics
     
     DB <--> A1
-    A1 -->|Stock & Trend State| A2
-    RF -->|Demand Predictions| A2
-    A2 -->|Forecast Horizon| A3
-    A3 -->|Restock Recommendation| A4
-    A4 -->|PO Proposal| HITL
+    A1 --> A2
+    RF --> A2
+    A2 --> A3
+    A3 --> A4
+    A4 --> HITL
     
-    HITL -->|Authorized| ActionApprove -->|Update Inventory| DB
-    HITL -->|Rejected| ActionReject -->|Log Audit Trail| DB
+    HITL --> ActionApprove
+    ActionApprove --> DB
+    HITL --> ActionReject
+    ActionReject --> DB
     DB <--> UI
 ```
 
